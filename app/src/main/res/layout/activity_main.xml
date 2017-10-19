@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="16dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="16dp"
+                tools:context="com.test.notification.notificationtest.MainActivity">
+
+    <EditText
+        android:id="@+id/main_primary_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:hint="Primary Notification Title"
+        android:text="Primary Notification Title"/>
+
+    <Button
+        android:id="@+id/main_primary_send1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_primary_title"
+        android:text="send"/>
+
+    <Button
+        android:id="@+id/main_primary_send2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_primary_title"
+        android:text="send"
+        android:layout_alignParentRight="true"/>
+
+    <ImageButton
+        android:id="@+id/main_primary_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_primary_send2"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:contentDescription="跳转到设置页"
+        android:src="@android:drawable/ic_menu_preferences"/>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/main_primary_config"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"/>
+
+    <EditText
+        android:id="@+id/main_secondary_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:hint="Secondary Notification Title"
+        android:text="Secondary Notification Title"/>
+
+    <Button
+        android:id="@+id/main_secondary_send1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_secondary_title"
+        android:text="send"/>
+
+    <Button
+        android:id="@+id/main_secondary_send2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_secondary_title"
+        android:text="send"
+        android:layout_alignParentRight="true"/>
+
+
+    <ImageButton
+        android:id="@+id/main_secondary_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_secondary_send2"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:contentDescription="跳转到设置页"
+        android:src="@android:drawable/ic_menu_preferences"/>
+
+
+    <LinearLayout
+        android:id="@+id/main_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/setting_jump_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="跳转到设置页"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
